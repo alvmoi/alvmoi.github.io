@@ -1,0 +1,37 @@
+body
+    {
+    background-color:papayawhip;
+    }
+
+.header-example
+    {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 5px;
+    margin-left: 20px;
+    }
+
+.header2-example
+    {
+    border-style:outset;
+    border-color: black;
+    border-width: 1px;
+    padding: 2px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    }
+
+.paragraph-example
+    {
+    background-color: lavenderblush;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 12px;
+    padding:  5px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    }
