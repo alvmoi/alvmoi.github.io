@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Toinen HTML sivu</title>
 <style>
     img {
@@ -12,14 +13,22 @@
 </head>
 <body>
     <header> 
-        <h1>Tervetuloa toiselle verkkosivulleni - 
+        <h1 class="header-example">Tervetuloa toiselle verkkosivulleni - 
             <a href="https://alvmoi.github.io/HTML_Basics_Assignment/index.html">Pääsivulle</a>
         </h1>
-        <img src="images/hymynaama.png" alt="Hymynaama">
+
+    <img src="images/hymynaama.png" alt="Hymynaama" style="vertical-align:middle;margin:0px 100px">
+
     </header>
     <main>
-                <h2>Tässä toisen verkkosivun sisältöä</h2>
-                <p>Koodailua<br>Koodailua<br>Ja koodailua.</p>
+                <h2 class ="header2-example">Tässä toisen verkkosivun sisältöä</h2>
+                <p class="paragraph-example">Koodailua<br>Koodailua<br>Ja koodailua.</p>
+    <figure>
+        <img src="images/tähtiä.png" alt="Kaksi sinistä tähteä" style="vertical-align:middle;margin:0px 60px">
+            <figcaption>Yksi isompi tähti, toinen pienempi.</figcaption>
+    </figure>
+                    <label for="file">Opintojen suoritus:</label>
+                    <progress id="file" value="10" max="210"> 4,76% </progress>
     </main>
 
             
