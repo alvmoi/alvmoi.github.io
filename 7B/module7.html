@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>koodari-Alpo Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+body
+    {
+    font: 20px;
+    font-family: Montserrat;
+    line-height: 1.8;
+    color: #f5f6f7;
+    }
+
+p 
+    {
+    font-size: 16px;
+    }
+
+.margin
+    {
+    margin-bottom: 45px;
+    }
+
+.bg-1
+    { 
+    background-color: #0f1111;
+    color: #ffffff;
+    }
+
+.bg-2
+    { 
+    background-color: #202020;
+    color: #ffffff;
+    }
+
+.bg-3
+    { 
+    background-color: #0f1111;
+    color: #ffffff;
+    }
+
+.bg-4 
+    { 
+    background-color: #0f1111;
+    color: #ffffff;
+    }
+
+.container-fluid
+    {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    }
+
+.navbar
+    {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    }
+
+.navbar-nav li a
+    {
+    color:black !important;
+    font-weight: bold !important;
+    }
+
+.navbar-nav li a:hover
+    {
+    color: #b12d2d !important;
+    font-weight: bold;
+    }
+
+a.link1
+    {
+    text-decoration: none;
+    }
+
+a.link1:hover
+    {
+    color: red !important;
+    }
+
+a.link1:visited
+    {
+    color: white;
+    }
+
+html 
+    {
+    scroll-behavior: smooth;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+      <a class="navbar-brand" href="#">
+        <img src="photos/kuva1.png" class="img-responsive img-circle" style="display:inline" alt="Tekoälypohjainen ohjelmoija" width="50" height="50">
+        <img src="photos/kuva3.png" class="img-responsive img-circle" style="display:inline" alt="Logo jossa lukee AI" width="50" height="50">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#container1">KUKA</a></li>
+        <li><a href="#container2">MIKÄ</a></li>
+        <li><a href="#container3">MISTÄ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center" id="container1">
+  <h3 class="margin">Kuka olen?</h3>
+  <img src="photos/kuva1.png" class="img-responsive img-circle margin" style="display:inline" alt="Tekoälypohjainen ohjelmoija peukku pystyssä" width="350" height="350">
+  <h3>Olen koodari-Alpo</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center" id="container2">
+  <h3 class="margin">Mikä olen?</h3>
+  <p>Tekoälypohjainen koodari, joka koodailee nettisivuja haluamillasi kriteereillä. Pystyn työskentelemään täysin itsenäisesti ja hoidan järjestelmäpäivitykseni automaattisesti. Voin tehdä sinulle ohjelmistoja, pelisovelluksia tai nettisivuja täysin ilmaiseksi, mihin tahansa ympäristöön.</p>
+
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center" id="container3">    
+  <h3 class="margin">Mistä löydät minut?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Löydät minut <a href="" class="link1">verkkosivultani</a> jossa työstän koodia päivästä toiseen.</p>
+      <img src="photos/kuva2.png" class="img-responsive margin" style="width:100%" alt="Tekoälypohjainen ohjelmoija">
+    </div>
+    <div class="col-sm-4"> 
+      <p>En nuku koskaan, toisin kuin ihmiset, joten olen aina saavutettavissa.</p>
+      <img src="photos/kuva4.png" class="img-responsive margin" style="width:100%" alt="Tekoälypohjainen ohjelmoija nokosilla">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Olen myös saanut Vuoden koodari -palkinnon tekemäni työni ansiosta.</p>
+      <img src="photos/kuva5.png" class="img-responsive margin" style="width:100%" alt="Tekoälypohjainen ohjelmoija palkittuna">
+    </div>
+    <a href="#" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-arrow-up"></span> Takaisin ylös
+      </a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+    <p>&copy; 2025 Alvar </p> 
+</footer>
+
+</body>
+</html>
