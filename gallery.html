@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AI - Art Gallery</title>
+  <link rel="icon" type="image/png" href="photos/Logo_tab.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>     
+    
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <a href="index.html"><img src="photos/Logo_front.png" class="img-responsive" style="display:inline" alt="Website's logo" width="200" height="200"></a>      
+    <p>Visualize, Create & Share</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li class="active"><a href="gallery.html"><i class="fas fa-image"></i> Gallery</a></li>
+      <li><a href="market.html"><i class="fas fa-shopping-cart"></i> Market</a></li>
+      <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-content">
+<div class="container first">    
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <div class="thumbnail-body"><img src="photos/Futuristic_robot.png" class="img-responsive clickable-image"
+              style="width:100%" alt="Futuristic robot, wearing black armour." data-title="Chrome Sentinel"
+              data-description="A futuristic female android stands poised in a cold, metallic corridor. Her sleek black armor is detailed with cybernetic etchings and luminous blue eyes that scan the environment with precision. Designed for stealth, speed, and strategic awareness, this sentinel radiates strength and sophistication in equal measure."
+              data-toggle="modal" data-target="#imageModal">
+        <div class="caption text-center" style="color:#f2f2f2">
+          <h4>Chrome Sentinel</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4"> 
+      <div class="thumbnail">
+        <div class="thumbnail-body"><img src="photos/Wizard.png" class="img-responsive clickable-image"
+              style="width:100%" alt="Mysterious wizard casting a spell" data-title="The Arcane Scholar"
+              data-description="An aged but powerful wizard cloaked in indigo robes embroidered with gold threads conjures a glowing arcane glyph. His intense blue eyes reflect wisdom earned over centuries, while the deep cosmic backdrop hints at his mastery of celestial forces. The scene is alive with magic and intellect — a portrait of mystical command and quiet strength."
+              data-toggle="modal" data-target="#imageModal">
+        <div class="caption text-center" style="color:#f2f2f2">
+          <h4>The Arcane Scholar</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4"> 
+      <div class="thumbnail">
+        <div class="thumbnail-body"><img src="photos/Scientist_robot.png" class="img-responsive clickable-image"
+              style="width:100%" alt="White armored scientist robot" data-title="Bio-Synthetic Alchemist"
+              data-description="A sleek, humanoid robot clad in white composite armor stands focused in a dim laboratory, examining a glowing blue liquid in a beaker. Its violet-lit optical sensor gleams with intelligence and precision, blending cutting-edge artificial design with human-like posture. This cybernetic scientist embodies the pursuit of knowledge in a synthetic future."
+              data-toggle="modal" data-target="#imageModal">
+        <div class="caption text-center" style="color:#f2f2f2">
+          <h4>Bio-Synthetic Alchemist</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container second">    
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <div class="thumbnail-body"><img src="photos/Lake.png" class="img-responsive clickable-image"
+              style="width:100%" alt="Animals on the Lake" data-title="Morning Light at Mistwood Creek"
+              data-description="As the early sun rises over a forested stream, a stag and doe meet at the water's edge, their silhouettes framed in golden mist. A lone duck drifts peacefully in the foreground. This serene woodland scene radiates harmony, stillness, and the quiet beauty of dawn in untouched nature."
+              data-toggle="modal" data-target="#imageModal">
+        <div class="caption text-center" style="color:#f2f2f2">
+          <h4>Morning Light at Mistwood Creek</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4"> 
+      <div class="thumbnail">
+        <div class="thumbnail-body"><img src="photos/Sea.png" class="img-responsive clickable-image"
+              style="width:100%" alt="Sunset at Sea" data-title="Ember Horizon"
+              data-description="Waves roll gently onto a golden shore as the sun dips into the horizon, casting warm amber reflections across the sea. Clouds glow with soft hues of orange and violet, creating a tranquil yet powerful image of nature's daily farewell. A peaceful moment, frozen between day and dusk."
+              data-toggle="modal" data-target="#imageModal">
+        <div class="caption text-center" style="color:#f2f2f2">
+          <h4>Ember Horizon</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4"> 
+      <div class="thumbnail">
+        <div class="thumbnail-body"><img src="photos/Ocean_floor.png" class="img-responsive clickable-image"
+              style="width:100%" alt="Depths of the Ocean" data-title="The Silence Below"
+              data-description="Sunlight pierces the ocean surface in radiant beams, illuminating the quiet, shadowed world beneath. The deep blue gradient of the sea fades into darkness, revealing subtle textures of the ocean floor. This image captures the stillness, depth, and mystery of the underwater realm."
+              data-toggle="modal" data-target="#imageModal">
+        <div class="caption text-center" style="color:#f2f2f2">
+          <h4>The Silence Below</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container third">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <div class="thumbnail-body"><img src="photos/Knight_forest.png" class="img-responsive clickable-image"
+              style="width:100%" alt="Futuristic knight in forest" data-title="Sentinel of the Glade"
+              data-description="A towering armored warrior stands silently in a sun-dappled forest, clad in crimson exo-armor and gripping a glowing, molten blade. His glowing blue visor peers forward through the misty woodland, hinting at high-tech intelligence hidden beneath ancient form. This figure embodies the perfect fusion of tradition and technology, standing as a guardian between worlds."
+              data-toggle="modal" data-target="#imageModal">
+        <div class="caption text-center" style="color:#f2f2f2">
+          <h4>Sentinel of the Glade</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <div class="thumbnail-body"><img src="photos/Celestial_woman.png" class="img-responsive clickable-image"
+              style="width:100%" alt="Celestial woman in starry robes" data-title="Starborn Veil"
+              data-description="Bathed in a serene, cosmic glow, a mysterious, ethereal woman stands cloaked in a robe of stardust and celestial light. Her face is calm, framed by a radiant golden halo, as if touched by divinity. This image evokes timeless grace — a celestial being draped in the essence of the universe, suspended in quiet reverence."
+              data-toggle="modal" data-target="#imageModal">
+        <div class="caption text-center" style="color:#f2f2f2">
+          <h4>Starborn Veil</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <div class="thumbnail-body"><img src="photos/Cosmic_eye.png" class="img-responsive clickable-image"
+              style="width:100%" alt="Cosmic eye nebula" data-title="Celestial Iris"
+              data-description="A massive cosmic eye emerges from the depths of space, swirling with radiant nebulae, glowing filaments, and stardust tendrils. Its fiery iris and dark pupil stare outward like a gateway between galaxies. This surreal vision fuses awe and mystery, as if the universe itself were observing creation through a lens of energy and eternity."
+              data-toggle="modal" data-target="#imageModal">
+        <div class="caption text-center" style="color:#f2f2f2">
+          <h4>Celestial Iris</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+<div class="container fourth">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <div class="thumbnail-body"><img src="photos/Panther.png" class="img-responsive clickable-image"
+              style="width:100%" alt="Black panther in a jungle" data-title="Shadow of the Jungle"
+              data-description="A black panther silently stalks through the dense rainforest under a canopy of shadows and mist. Its piercing golden eyes cut through the gloom as it moves with silent precision over moss-covered stone. The atmosphere is heavy with mystery, capturing the stealth, strength, and elegance of this elusive predator in its natural realm."
+              data-toggle="modal" data-target="#imageModal">
+        <div class="caption text-center" style="color:#f2f2f2">
+          <h4>Shadow of the Jungle</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <div class="thumbnail-body"><img src="photos/Shark.png" class="img-responsive clickable-image"
+              style="width:100%" alt="White shark in deep sea" data-title="Sovereign of the Deep"
+              data-description="Beneath shafts of sunlight breaking through the ocean surface, a great white shark dominates the deep blue world around it. Surrounded by a school of fish and drifting bubbles, the shark's powerful presence conveys both beauty and primal fear. A tribute to the raw power and grace of one of the ocean's most iconic hunters."
+              data-toggle="modal" data-target="#imageModal">
+        <div class="caption text-center" style="color:#f2f2f2">
+          <h4>Sovereign of the Deep</h4>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <div class="thumbnail-body"><img src="photos/Eagle.png" class="img-responsive clickable-image"
+              style="width:100%" alt="White eagle on the sky" data-title="Wings of the Summit"
+              data-description="A majestic bald eagle soars across a golden sunset sky above a mountainous wilderness. Its massive wings stretch wide over forested peaks and deep valleys, with the fading light igniting each feather in warm amber tones. The image evokes freedom, precision, and the spirit of the untamed highlands."
+              data-toggle="modal" data-target="#imageModal">
+        <div class="caption text-center" style="color:#f2f2f2">
+          <h4>Wings of the Summit</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+<div id="imageModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class ="modal-dialog modal-lg model-dialog-centered">
+    <div class="modal-content" style="background-color: transparent; border: none;">
+      <div class="modal-body d-flex flex-row align-items-stretch" style="padding: 0;">
+
+        <img src="#" id="modalImage" class="img-fluid" style="max-height: 90vh; width: auto; object-fit: contain;" alt="Fullscreen view">
+        <div class="sidebar-panel" style="max-width: 30%; padding: 20px; color: white;">
+          <h4 id="imageTitle">Untitled</h4>
+          <p id="imageDescription">No description available</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<footer class="site-footer text-center">
+  <p>AI Art Gallery &copy;</p>  
+  <form class="form-inline">
+    <label for="newsletter">Sign up for our Newsletter:</label><br>
+    <input type="email" id="newsletter" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-primary">Submit</button>
+  </form>
+</footer>
+
+<script>
+  $(document).ready(function () {
+    $('.clickable-image').on('click', function(){
+      var imageSrc = $(this).attr('src');
+      var imageAlt = $(this).attr('alt');
+      var imageTitle = $(this).data('title') || "Untitled";
+      var imageDescription = $(this).data('description') || "No description available.";
+
+      $('#modalImage').attr('src', imageSrc);
+      $('#modalImage').attr('alt', imageAlt);
+      $('#imageTitle').text(imageTitle);
+      $('#imageDescription').text(imageDescription);
+    });
+  });
+</script>
+
+</body>
+</html>

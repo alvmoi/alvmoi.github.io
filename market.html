@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AI - Art Gallery</title>
+  <link rel="icon" type="image/png" href="photos/Logo_tab.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>     
+    
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <a href="index.html"><img src="photos/Logo_front.png" class="img-responsive" style="display:inline" alt="Website's logo" width="200" height="200"></a>      
+    <p>Visualize, Create & Share</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="gallery.html"><i class="fas fa-image"></i> Gallery</a></li>
+      <li class="active"><a href="market.html"><i class="fas fa-shopping-cart"></i> Market</a></li>
+      <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="page-content">
+  <div class="container-fluid market">
+    <div class="container market-content">
+    <strong>Coming More Soon!</strong><p>Below you can review our limited edition digital prints for sale.</p>
+    </div>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <div class="thumbnail-body"><img src="photos/Tree.png" class="img-responsive clickable-image"
+              style="width:100%" alt="The Eternal tree" data-title="The Eternal Tree"
+              data-description="A massive, ancient tree rises from rugged highlands, its immense branches glowing under a star-filled night sky. This mystical symbol of life, wisdom, and connection between earth and cosmos stands alone in tranquil silence, rooted in a world both magical and eternal."
+              data-toggle="modal" data-target="#imageModal">
+        <div class="caption text-center" style="color: #f2f2f2">
+          <h3>The Eternal Tree</h3>
+          <p>Price: $19.99 (Digital Download)</p>
+          <p><button type="button" class="btn btn-success">Buy</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <div class="thumbnail-body"><img src="photos/Statue.png" class="img-responsive clickable-image"
+              style="width:100%" alt="Statue" data-title="Golden Serenity"
+              data-description="Bathed in sacred golden light, a serene Buddha statue rests within an ancient stone temple. Intricate carvings and delicate vines hint at forgotten wisdom, while the radiant mandala behind the figure invites calm reflection and spiritual depth."
+              data-toggle="modal" data-target="#imageModal">
+        <div class="caption text-center" style="color: #f2f2f2">
+          <h3>Golden Serenity</h3>
+          <p>Price: $24.99 (Digital Download)</p>
+          <p><button type="button" class="btn btn-success">Buy</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <div class="thumbnail-body"><img src="photos/Moonlight.png" class="img-responsive clickable-image"
+              style="width:100%" alt="Moonlight landscape" data-title="Moon's Embrace"
+              data-description="A full moon casts its silver glow over misty mountains and swirling celestial clouds. The dreamy, hypnotic vortex around the moon draws the eye into a moment of stillness, symbolizing clarity, mystery, and the beauty of quiet solitude."
+              data-toggle="modal" data-target="#imageModal">
+        <div class="caption text-center" style="color: #f2f2f2">
+          <h3>Moon's Embrace</h3>
+          <p>Price: $19.99 (Digital Download)</p>
+          <p><button type="button" class="btn btn-success">Buy</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+<div id="imageModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class ="modal-dialog modal-lg model-dialog-centered">
+    <div class="modal-content" style="background-color: transparent; border: none;">
+      <div class="modal-body d-flex flex-row align-items-stretch" style="padding: 0;">
+
+        <img src="#" id="modalImage" class="img-fluid" style="max-height: 90vh; width: auto; object-fit: contain;" alt="Fullscreen view">
+        <div class="sidebar-panel" style="max-width: 30%; padding: 20px; color: white;">
+          <h4 id="imageTitle">Untitled</h4>
+          <p id="imageDescription">No description available</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <footer class="site-footer text-center">
+  <p>AI Art Gallery &copy;</p>  
+  <form class="form-inline">
+    <label for="newsletter">Sign up for our Newsletter:</label><br>
+    <input type="email" id="newsletter" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-primary">Submit</button>
+  </form>
+</footer>
+
+<script>
+  $(document).ready(function () {
+    $('.clickable-image').on('click', function(){
+      var imageSrc = $(this).attr('src');
+      var imageAlt = $(this).attr('alt');
+      var imageTitle = $(this).data('title') || "Untitled";
+      var imageDescription = $(this).data('description') || "No description available.";
+
+      $('#modalImage').attr('src', imageSrc);
+      $('#modalImage').attr('alt', imageAlt);
+      $('#imageTitle').text(imageTitle);
+      $('#imageDescription').text(imageDescription);
+    });
+  });
+</script>
+
+</body>
+</html>
